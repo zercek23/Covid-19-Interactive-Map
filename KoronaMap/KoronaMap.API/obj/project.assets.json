@@ -7825,11 +7825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\KoronaMap\\KoronaMap.API\\KoronaMap.API.csproj",
+      "projectUniqueName": "D:\\Source\\Covid-19-Interactive-Map\\KoronaMap\\KoronaMap.API\\KoronaMap.API.csproj",
       "projectName": "KoronaMap.API",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\KoronaMap\\KoronaMap.API\\KoronaMap.API.csproj",
+      "projectPath": "D:\\Source\\Covid-19-Interactive-Map\\KoronaMap\\KoronaMap.API\\KoronaMap.API.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\KoronaMap\\KoronaMap.API\\obj\\",
+      "outputPath": "D:\\Source\\Covid-19-Interactive-Map\\KoronaMap\\KoronaMap.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

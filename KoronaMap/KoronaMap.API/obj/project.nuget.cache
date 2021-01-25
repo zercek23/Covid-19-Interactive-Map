@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jUNQMSc7pzSx440DfXrFe404mmLIygkiEUeQ04oYsBdY9FImoRsJBl+r4eeJQzgHGuar/8vnfCea0PdTSBkiGA==",
+  "dgSpecHash": "leMXu4B55ek7LI1B5d2n7yiPU1/7HGzB4TJDUrTPnRpgtFnmeofrdHispL9QTZlH5WMb7+GmMDZZHlUM7Jphvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\source\\repos\\KoronaMap\\KoronaMap.API\\KoronaMap.API.csproj",
+  "projectFilePath": "D:\\Source\\Covid-19-Interactive-Map\\KoronaMap\\KoronaMap.API\\KoronaMap.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.authorization\\1.0.3\\microsoft.aspnetcore.authorization.1.0.3.nupkg.sha512",

@@ -13,7 +13,7 @@ class PostForm extends Component {
     changeHandler = e => {
         this.setState({ [e.target.name]: e.target.value })
     }
-    
+
     componentDidMount() {
         fetch('http://localhost:3000/result')
             .then(res => res.json())
@@ -24,14 +24,14 @@ class PostForm extends Component {
         console.log(this.state.countries);
     }
 
-     submitHandler = async(e) => {
+    submitHandler = async (e) => {
         e.preventDefault();
 
 
         console.log(this.state.countries);
 
 
-        this.state.countries.forEach(async(country) => {
+        this.state.countries.forEach(async (country) => {
             await axios.post('http://localhost:64148/api/Cases/getCountries', country)
                 .then(response => {
                     console.log(response)

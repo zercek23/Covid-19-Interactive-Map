@@ -25,7 +25,7 @@ namespace KoronaMap.API.Controllers
             var selectedUser = _ApiDbContext.Users.Where(item => item.Name == user.Name && item.Password == user.Password).FirstOrDefault();
             if (selectedUser != null)
             {
-                return Ok();
+                return Ok(selectedUser);
             }
             return NotFound();
         }

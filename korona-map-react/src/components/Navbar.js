@@ -20,6 +20,11 @@ class Navbar extends Component {
                         Sign up
                     </button>
                 </Link>
+                <Link to="/admin">
+                    <button >
+                        Admin
+                    </button>
+                </Link>
             </div>
         )
     }

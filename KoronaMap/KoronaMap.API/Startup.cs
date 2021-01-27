@@ -17,7 +17,7 @@ namespace KoronaMap.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddSwaggerDocument();
         }
 

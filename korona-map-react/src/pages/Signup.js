@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Link, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 export default class Signup extends Component {
     constructor(props) {
@@ -8,7 +8,8 @@ export default class Signup extends Component {
 
         this.state = {
             name: '',
-            password: ''
+            password: '',
+            isLogined: false,
         }
     }
 
@@ -24,17 +25,17 @@ export default class Signup extends Component {
         await axios.post('http://localhost:64148/api/Login', this.state)
             .then(response => {
                 console.log(response)
+                this.setState({ isLogined: true });
             })
             .catch(error => {
                 console.log(error)
-            })
-
+            })        
     }
 
     render() {
         const { name, password } = this.state;
-        if (true) {
-            <Redirect to="/" />
+        if (this.state.isLogined) {
+            return <Redirect to="/" />
         }
         return (
             <div>
@@ -43,10 +44,9 @@ export default class Signup extends Component {
                         <input type="text" name="name" value={name} onChange={this.changeHandler} />
                     </div>
                     <div>
-                        <input type="text" name="password" value={password} onChange={this.changeHandler} />
+                        <input type="password" name="password" value={password} onChange={this.changeHandler} />
                     </div>
                     <button type="submit">Submit</button>
-
                 </form>
             </div>
         )

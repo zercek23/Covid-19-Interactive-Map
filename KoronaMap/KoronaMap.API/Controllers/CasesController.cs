@@ -36,6 +36,7 @@ namespace KoronaMap.API.Controllers
             return Ok(countries.OrderByDescending(c => c.TotalCase));
         }
 
+        /* Used Once for entry countries to database*/
         [HttpPost]
         [Route("getCountries")]
         public async Task<ActionResult> PostCountries([FromBody] Country country)
@@ -75,6 +76,7 @@ namespace KoronaMap.API.Controllers
 
         // POST api/<CasesController>
         [HttpPost]
+        [Route("newcase")]
         public async Task<ActionResult> AddNewCase([FromBody] VirusCase virusCase)
         {
             if (ModelState.IsValid)
